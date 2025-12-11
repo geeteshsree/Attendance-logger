@@ -23,6 +23,7 @@ Connect Lambda to API Gateway (set POST method)
 Give Lambda permission to write to DynamoDB
 Update HTML to call your API endpoint
 Use DynamoDB → Explore table items to view or export attendance data
+
 📊 Sample DynamoDB Record
 {
   "studentId": "sudharshan",
