@@ -10,7 +10,7 @@ export const handler = async (event) => {
     const params = {
         TableName: "AttendanceRecords",
         Item: {
-            studentID: `${studentID}_${timestamp}`, // ✅ fixed here
+            studentID: `${studentID}_${timestamp}`, // fixed here
             name,
             timestamp
         }
@@ -20,7 +20,7 @@ export const handler = async (event) => {
         await docClient.send(new PutCommand(params));
         return {
             statusCode: 200,
-            body: JSON.stringify({ message: `Attendance marked for ${name}` }) // ✅ fixed here
+            body: JSON.stringify({ message: `Attendance marked for ${name}` }) // fixed here
         };
     } catch (error) {
         return {
