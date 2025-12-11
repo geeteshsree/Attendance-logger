@@ -40,6 +40,6 @@ inalproject/ ├── backend/            # Node.js Lambda function │   └�
 
 ```json
 {
-  "studentId": "sudharshan",
+  "studentId": "geetesh",
   "timestamp": "2025-06-29T12:34:56Z"
 }
